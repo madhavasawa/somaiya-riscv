@@ -1,8 +1,8 @@
 # RISC-V Internship-cum-Course
 
-The repository tracks all the progress for a duration of 1 month of the Internship provided by VSD (VLSI System Design) under the mentorship of Mr. Kunal Ghosh, Co-Founder of VSD.
+The repository tracks all the progress for a duration of 1 month of the Internship provided by VSD (VLSI System Design) under the mentorship of Mr. Kunal Ghosh, Co-Founder, VSD.
 
-## Contents :
+## Contents 
 - Introduction to RISC-V ISA and GNU Compiler Toolchain
 - Intoduction to ABI (Application Binary Interface) and Basic Error Flow
 ## Day-wise Progress
@@ -45,7 +45,7 @@ The code for the same is :
 ```
 #include <stdio.h>
 int main () {
-	int i,sum = 0, n = 6;
+	int i,sum = 0, n = 10;
 	for (i = 1; i <=n; ++i) {
 		sum += i;
 	}
@@ -53,8 +53,53 @@ int main () {
 	return 0;
 	}
 ```
+- To compile the above program, use the following command :
+  ```
+  gcc sum1ton.c
+  ```
+- Next, using the command below, we can get the output :
+  ```
+  ./a.out
+  ```
+
+  - The output of the above program is given below :
+    ![Lab 1 0](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/fc0d636d-f9cc-4f7f-9607-6a0a3afe4cb8)
+
+-> Now in the case of RISC-V GNU , the following commands are executed :
+- To use RISC-V gcc compiler, type
+  ```
+  riscv64-unknown-elf-gcc  -o <object filename.o> <filename.c>
+  ```
+- To List the details of a file, type
+  ```
+  riscv64-unknown-elf-gcc  -o <object filename.o> <filename.c>
+  ```
+- To deassemble the object file, type
+  ```
+  riscv64-unknown-elf-objdump <object file> -d <object filename.o>
+  ```
+- To highlight the main function
+  ```
+  riscv64-unknown-elf-objdump <object file> -d <object filename.o> | less
+  ```
+  ```
+  /main
+  n
+  ```
+  - The output for the above commands is give below (with total no of instructions)
+  ![No of instr](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/69f3563d-49d4-4e6c-bd8c-7b1e28172862)
+
 </details>
 
 <details> 
 <summary> Integer Number Representation </summary>
+- 64-bit Number System for Unsigned Numbers
+	
+![positive nos](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/3b8a5c06-ad1e-4eea-b9ce-3dcc00a36c64)
+
+- 64-bit Number System for Signed Numbers
+   
+![all nos](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/7c44e57b-08ee-4f4f-a98b-0714ca3f5995)
+
+
 </details>
