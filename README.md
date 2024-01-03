@@ -94,12 +94,42 @@ int main () {
 <details> 
 <summary> Integer Number Representation </summary>
 - 64-bit Number System for Unsigned Numbers
-	
+
 ![positive nos](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/3b8a5c06-ad1e-4eea-b9ce-3dcc00a36c64)
 
 - 64-bit Number System for Signed Numbers
    
 ![all nos](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/7c44e57b-08ee-4f4f-a98b-0714ca3f5995)
 
+-> The basic code to find the Highest and Smallest number possible in the 64-bit system is as follows
+```
+#include <stdio.h>
+#include <math.h>
 
+int main(){
+  long long int max = (long long int)(pow(2,64)-1);
+  long long int min = (long long int)(pow(2,64)*-1);
+  printf("Highest Number represented by signed long long int is %llu \n", max);
+  printf("Lowest Number represented by signed long long int is %llu \n", min);
+  return 0;
+}
+```
+
+</details>
+
+
+
+### Day 2 :
+<details>
+<summary> Application Binary Interface (ABI) </summary>
+-> Application Binary Interface (ABI) defines how software components interact at a binary level, ensuring compatibility across different compilers, platforms, and architectures. It specifies the conventions for function calls, data structures, and system calls, enabling interoperability between software modules and facilitating communication between programs at a low-level binary interface.
+	
+</details>
+
+<details>
+<summary> Lab Work using ABI function calls </summary>
+</details>
+
+<details>
+<summary> Basic Verification flow using iverilog </summary>
 </details>
