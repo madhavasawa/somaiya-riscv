@@ -101,12 +101,28 @@ int main () {
    
 ![all nos](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/7c44e57b-08ee-4f4f-a98b-0714ca3f5995)
 
+-> The basic code to find the Highest Unsigned number possible in the 64-bit system is as follows
+```
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+unsigned long long int max = (unsigned long long int)(pow(2,64)-1);
+printf("Highest Number represented by unsigned long long int is %llu \n", max);
+return 0;
+}
+```
+- The output for the same is :
+![unsigndHigh](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/d4ef2265-2fc3-418f-aae0-5ea4e53cb246)
+
 -> The basic code to find the Highest and Smallest number possible in the 64-bit system is as follows
 ```
 #include <stdio.h>
 #include <math.h>
 
-int main(){
+int main()
+{
   long long int max = (long long int)(pow(2,64)-1);
   long long int min = (long long int)(pow(2,64)*-1);
   printf("Highest Number represented by signed long long int is %llu \n", max);
@@ -114,6 +130,8 @@ int main(){
   return 0;
 }
 ```
+- The output for the same is
+  ![HighLow](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/99ebdd83-f87f-4a99-906a-619cd6d614d0)
 
 </details>
 
