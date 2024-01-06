@@ -141,13 +141,64 @@ int main()
 <details>
 <summary> Application Binary Interface (ABI) </summary>
 -> Application Binary Interface (ABI) defines how software components interact at a binary level, ensuring compatibility across different compilers, platforms, and architectures. It specifies the conventions for function calls, data structures, and system calls, enabling interoperability between software modules and facilitating communication between programs at a low-level binary interface.
-	
+
+![Screenshot 2024-01-06 091921](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/dfc0bac6-35e9-4f6d-aea2-8446a0ab6773)
+
+- Memory allocation for Double-words
+  - RISCV belongs to little-endian memory addressing system
+	![Screenshot 2024-01-06 092236](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/75c9b8ae-033e-4e0c-ab94-e3ba803329d3)
+
+- The commands basically used are :
+  - ld (load doubleword)
+  - sd (store doublword)
+  Example for using the above commands is:
+  ![Screenshot 2024-01-06 094350](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/a12806eb-1066-4c2e-95e8-eb15799917dd)
+
+- Other Keywords/Commands used are:
+  ![Screenshot 2024-01-06 094942](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/cf699d07-3cea-4f93-b4b1-1bd19b674054)
+
 </details>
 
 <details>
 <summary> Lab Work using ABI function calls </summary>
+-> ASM Function Call
+	
+- The Basic ASM Function Call Flowchart: 
+ 
+ ![Screenshot 2024-01-06 095721](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/95daacd7-655c-42c1-94bf-74f6be8e0e06)
+
+- Let's try a program to see how ASM Function works:
+  
+Program to find Sum of Numbers from 1 to 9 :
+![Screenshot 2024-01-06 100033](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/cd56a372-b0fd-4163-a045-7fcc19d8b741)
+
+
+```
+#include <stdio.h>
+extern int load(int x, int y)
+
+int main()
+{
+	int result = 0;
+	int count = 9;
+	result = load(0x0, count+1);
+	printf("Sum of numbers 0 to %d is %d ", count, result);
+}
+```
+![Lab 2 0](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/1395b141-94fd-46d7-80d7-d2ea4afd04ad)
+
+- The output for the above program is:
+  ![Lab 2 1](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/b08b2f30-b220-42c0-9fed-00855307ec5e)
+
 </details>
 
 <details>
 <summary> Basic Verification flow using iverilog </summary>
+
+![Screenshot 2024-01-06 181835](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/55649e15-a45f-44ae-af15-12da2d838da1)
+
+- List of Commands
+  ![list of cmds Lab3](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/108f298b-a037-4e64-9c0c-9e030bf16e0a)
+
+
 </details>
