@@ -88,6 +88,11 @@ int main () {
   ```
   - The output for the above commands is give below (with total no of instructions)
   ![No of instr](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/69f3563d-49d4-4e6c-bd8c-7b1e28172862)
+- To give the output of the riscv64-unknown-elf-gcc
+  ```
+  spike pk sum1ton.o
+  ```
+  ![spike 1](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/e0a30b20-b32f-48be-b7a2-ba5c282c4759)
 
 </details>
 
@@ -132,6 +137,17 @@ int main()
 ```
 - The output for the same is
   ![HighLow](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/99ebdd83-f87f-4a99-906a-619cd6d614d0)
+
+- The spike code for the above program is:
+  ```
+  spike pk unsignedHigh.o
+  ```
+  ```
+  spike pk signed.o
+  ```
+
+- The output for the same
+  ![spike 3](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/43675244-af1d-492b-ab9c-3658e312209c)
 
 </details>
 
@@ -189,6 +205,16 @@ int main()
 
 - The output for the above program is:
   ![Lab 2 1](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/b08b2f30-b220-42c0-9fed-00855307ec5e)
+
+- The riscv64-unknown-elf-gcc code for the above program is
+  ```
+  riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.o load.S
+  ```
+  The output is given by:
+  ```
+  spike pk 1to9_custom.o
+  ```
+![spke 4](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/6bd06477-b8c7-4fe6-a068-1fbe8785312a)
 
 </details>
 
