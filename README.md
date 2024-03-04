@@ -5,9 +5,11 @@ The repository tracks all the progress for a duration of 1 month of the Internsh
 ## Contents 
 - Introduction to RISC-V ISA and GNU Compiler Toolchain
 - Intoduction to ABI (Application Binary Interface) and Basic Error Flow
-## Day-wise Progress
+- Platform IO and Basic Coding in Platform IO using VS Code
+- Project based on VSD Mini
+## Week-wise Progress
 
-### Day 0 : 
+### Week 0 : 
 <details>
 <summary>Installation of Ubuntu System (Using Virtual Box and vsdsquadron.vdi)</summary>
   -> Steps to install the System
@@ -22,7 +24,7 @@ The repository tracks all the progress for a duration of 1 month of the Internsh
 ![Screenshot 2023-12-28 121708](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/0d911aa5-f855-466f-9253-9802be61d2c1)
 </details>
 
-### Day 1 : Introduction to RISC-V ISA and GNU Compiler Toolchain
+### Week 1 : Introduction to RISC-V ISA and GNU Compiler Toolchain
 <details>
 <summary> Introduction to RISC-V Basic Keywords </summary>
 -> The RISC-V ISA (Instruction Set Architecture) stands out for its simplicity, with fixed-length instructions and a clean design. This simplicity aids in ease of understanding, implementation, and optimization. RISC-V's open-source nature enables a collaborative community, leading to continuous refinement, standardization, and the development of a rich software ecosystem. This openness empowers engineers to tailor processors to specific needs, from embedded systems to high-performance computing. Its royalty-free model fosters widespread adoption, making RISC-V a compelling choice for both academia and industry.
@@ -153,7 +155,7 @@ int main()
 
 
 
-### Day 2 :
+### Week 2 :
 <details>
 <summary> Application Binary Interface (ABI) </summary>
 -> Application Binary Interface (ABI) defines how software components interact at a binary level, ensuring compatibility across different compilers, platforms, and architectures. It specifies the conventions for function calls, data structures, and system calls, enabling interoperability between software modules and facilitating communication between programs at a low-level binary interface.
@@ -225,6 +227,40 @@ int main()
 
 - List of Commands
   ![list of cmds Lab3](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/108f298b-a037-4e64-9c0c-9e030bf16e0a)
+</details>
 
+### Week 3:
+<details>
+<summary>Installation of RISCV Platform IO </summary>
 
+![1](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/879a9a30-fa6e-4089-98b9-dbfa56727e57)
+
+![2](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/d88f5fb5-6b4f-44e8-b44c-ca3b8a4d64ad)
+
+![3](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/c53e92c3-c32f-431f-86df-7be580585536)
+
+![4](https://github.com/madhavasawa/somaiya-riscv/assets/154996436/e25f721f-d0fe-42ac-86f5-1625acb7c57a)
+
+</details>
+
+### Week 4:
+<details>
+<summary>Project </summary>
+-> Project Report
+
+- https://drive.google.com/file/d/1gwNAvKH-pGbndcom8Ff31Zt1fW6il_u4/view?usp=sharing
+  
+-> Project Working Video
+- https://drive.google.com/file/d/1dqUZRxE1F_3eUHeQeP5vABbHz0ou6kG3/view?usp=sharing
+  
+</details>
+
+### References:
+<details>
+<summary>Reference Links</summary>
+
+- [SquadronMini_2A_Schematic.pdf](https://github.com/madhavasawa/somaiya-riscv/files/14485141/SquadronMini_2A_Schematic.pdf)
+- [CH32V305FBP6.pdf](https://github.com/madhavasawa/somaiya-riscv/files/14485144/CH32V305FBP6.pdf)
+- [CH32V003DS0.PDF](https://github.com/madhavasawa/somaiya-riscv/files/14485145/CH32V003DS0.PDF)
+- https://pallavaggarwal.medium.com/ch32v003-programming-tutorial-be0145590fe8
 </details>
